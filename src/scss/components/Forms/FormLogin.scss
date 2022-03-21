@@ -1,0 +1,66 @@
+@import '../../root.scss';
+
+
+    .form-login {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .button-login {
+            border: none;
+            font-weight: 700;
+            background-color: $brand-primary;
+            &:hover{
+                background-color: $brand-secondary;
+                color: $bw-black;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #373737;
+
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    font-size: 13px;
+
+                    label.label-required::after {
+                        content: "*";
+                        margin-left: 3px;
+
+                        input {
+                            position: absolute;
+                            left: 0px;
+                            right: 0px;
+                            top: 0px;
+                            bottom: 0px;
+                            background: #FFFFFF;
+                            border: 1px solid #999999;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                        }
+                        input[type=click] {
+                            position: static;
+                            width: 600px;
+                            height: 26px;
+                            left: 0px;
+                            top: 72px;
+                            color: #3E89AE;
+                            font-family: sans-serif;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 25px;
+                            text-align: center;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }

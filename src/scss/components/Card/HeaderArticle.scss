@@ -1,0 +1,28 @@
+@import '../../root.scss';
+
+.card-header {
+  border: none;
+  background-color: $bw-white;
+  width: 100%;
+  height: fit-content;
+
+  .article-body {
+    padding: 0;
+    margin-bottom: 24px;
+
+    p {
+      .badge-category {
+        background-color: $brand-mint;
+        color: $brand-primary;
+        font-weight: 700;
+        padding: 8px;
+      }
+    }
+  }
+
+  .header-img {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+  }
+}

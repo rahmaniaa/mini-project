@@ -1,0 +1,26 @@
+@import '../../root.scss';
+
+.AvatarEventCreator {
+  height: 42px;
+  color: $bw-gun;
+
+  .avatar-image {
+    border-radius: 50%;
+    height: 100%;
+    max-width: 360px;
+    max-height: 360px;
+  }
+
+  .avatar-text {
+    p {
+      margin-bottom: 0;
+      font-size: 0.75rem;
+    }
+
+    h4 {
+      margin-bottom: 0;
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}

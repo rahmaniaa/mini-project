@@ -1,0 +1,33 @@
+@import '../../root.scss';
+
+.AvatarUserProfile {
+  padding: 10vh 0;
+  min-height: 80vh;
+
+  img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .avatar-text {
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-sign-out {
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: $brand-primary;
+      color: $bw-white;
+    }
+
+    &:active {
+      background-color: darken($brand-primary, 10%);
+    }
+  }
+}

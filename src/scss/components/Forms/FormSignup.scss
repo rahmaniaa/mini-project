@@ -1,0 +1,144 @@
+@import '../../root.scss';
+
+$gap: 30px;
+$border-radius: 3px;
+
+// typography
+$t-font-sans: 'Roboto', sans-seriff;
+
+// Color
+$color-text: #232238d1;
+$color-main: #6a63dd;
+$color-accent: #72d2e3;
+$color-border: #ececfe;
+$color-info: #1890ff;
+$color-success: #52c41a;
+$color-warning: #faad14;
+$color-error: #ff4d4f;
+
+$color-score-map: (
+  worst: (
+    value: 0,
+    color: '#ea4436',
+  ),
+  bad: (
+    value: 1,
+    color: '#faae24',
+  ),
+  weak: (
+    value: 2,
+    color: '#e6e61d',
+  ),
+  good: (
+    value: 3,
+    color: '#3ddf3d',
+  ),
+  strong: (
+    value: 4,
+    color: '#abf80d',
+  ),
+);
+
+.error {
+  color: #ea4436;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+.strength-hint {
+  left: 100%;
+  top: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  font-size: 13px;
+  font-weight: 400;
+
+  @each $score, $group in $color-score-map {
+    $color: map-get($group, color);
+    $value: map-get($group, value);
+
+    &.#{$score} {
+      border-color: #{$color};
+      .strength-bar__item {
+        background-color: #{$color};
+      }
+
+      .strength-bar__item:nth-child(#{$value + 1}) ~ .strength-bar__item {
+        background-color: #e7e7e7;
+      }
+
+      strong {
+        color: #{$color};
+      }
+    }
+  }
+
+  &__suggestions {
+    padding-left: 15px;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    li {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+// Strenth hint
+.strength-bar {
+  padding: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+
+  &__item {
+    height: 3px;
+    border-radius: 3px;
+    width: 100%;
+    background: #e7e7e7;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+#password,
+.inputComfirPass {
+  display: flex;
+}
+.btn-ai {
+  position: absolute;
+  color: grey;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-top: auto;
+  margin-left: -2.3rem;
+  cursor: pointer;
+  right: 5px;
+  top: 0;
+}
+
+.btn-register {
+  background-color: $brand-primary;
+  color: $bw-white;
+  font-weight: 700;
+
+  &:hover {
+    background-color: $brand-secondary;
+  }
+}
+
+.field-form {
+  max-width: 600px;
+}

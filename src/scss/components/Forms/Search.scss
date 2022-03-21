@@ -1,0 +1,36 @@
+@import '../../root.scss';
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background: $bw-white;
+  width: 100%;
+  max-width: 600px;
+  height: 56px;
+  border-radius: 99px;
+
+  .search-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    input {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      font-weight: 400;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: $bw-white;
+    }
+  }
+}

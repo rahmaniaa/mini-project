@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: 'EB Garamond', 'Noto Sans', serif, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+}
+
+p,
+a,
+button,
+input,
+textarea,
+li,
+div,
+span {
+  font-family: 'Noto Sans';
+}
+
+@import url('./pages/Homepage.scss');
+@import url('./pages/EventList.scss');
+@import url('./pages/DetailArticle.scss');
+
+@import url('./components/Card/CardEvent.scss');
+@import url('./components/Navbar.scss');
+@import url('./components/Hero.scss');
+@import url('./components/Card/SingleRowCardList.scss');
+@import url('./components/Footer.scss');
+@import url('./components/Forms/Search.scss');
+@import url('./components/Button/Button.scss');
+@import url('./components/Card/SearchList.scss');
+@import url('./components/Forms/Dropdown.scss');
+@import url('./components/Forms/Pagination.scss');
+@import url('./components/Avatar/AvatarEventCreator.scss');
+@import url('./components/Card/HeaderArticle.scss');
+@import url('./components/Content/EventArticle.scss');
+@import url('./components/Avatar/AvatarCommentator.scss');
+@import url('./components/Content/UserComment.scss');
+@import url('./components/Avatar/SimpleAvatarUser.scss');
+@import url('./components/Forms/FormInputComment.scss');
+@import url('./components/Avatar/AvatarUserProfile.scss');
+
+@import url('./components/Forms/FormLogin.scss');
+@import url('./components/Forms/FormSignup.scss');
+@import url('./components/Card/CardSwiper.scss');
+@import url('./components/Button/Button.scss');
+
+@import url('./layout/dashboard.scss');

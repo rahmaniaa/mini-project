@@ -1,0 +1,24 @@
+@import '../root.scss';
+
+.navbar {
+  div.container {
+    padding: 0 24px;
+    ul {
+      width: 20vw;
+      max-width: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .nav-item {
+        .nav-link {
+          color: $bw-white;
+
+          &:hover {
+            color: $brand-secondary;
+          }
+        }
+      }
+    }
+  }
+}

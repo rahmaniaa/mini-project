@@ -1,0 +1,79 @@
+@import '../root.scss';
+
+footer {
+  width: 100%;
+  background-color: $brand-primary;
+
+  .footer-top {
+    padding: 48px 0;
+    color: $bw-white;
+    display: flex;
+    justify-content: space-between;
+
+    .about {
+      width: 30vw;
+
+      p {
+        margin: 24px 0;
+      }
+
+      .media-social {
+        margin-top: px;
+
+        h5 {
+          font-size: 16px;
+        }
+
+        .icons-social-media {
+          width: 170px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .footer-list {
+      h5 {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        padding-left: 0;
+
+        li {
+          list-style: none;
+          margin: 8px 0;
+
+          a {
+            text-decoration: none;
+            color: $bw-white;
+
+            &:hover {
+              color: $brand-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: $bw-white;
+    padding: 0;
+
+    ul {
+      li {
+        a {
+          color: $bw-white;
+
+          &:hover {
+            color: $brand-secondary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../root.scss';
+
+.article-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .article-wrapper {
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .article-bottom-wrapper {
+      .content {
+        flex: 5;
+      }
+
+      .side-bar {
+        flex: 3;
+      }
+    }
+  }
+}
